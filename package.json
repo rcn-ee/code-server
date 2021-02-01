@@ -140,6 +140,12 @@
       }
     },
     "testTimeout": 30000,
-    "globalSetup": "<rootDir>/test/globalSetup.ts"
+    "globalSetup": "<rootDir>/test/globalSetup.ts",
+    "modulePathIgnorePatterns": [
+      "<rootDir>/lib/vscode",
+      "<rootDir>/release-packages",
+      "<rootDir>/release",
+      "<rootDir>/release-standalone"
+    ]
   }
 }
