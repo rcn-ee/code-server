@@ -42,6 +42,9 @@ arch() {
   x86_64 | amd64)
     echo amd64
     ;;
+  armv7l)
+    echo armhf
+    ;;
   *)
     echo "unknown architecture $(uname -a)"
     exit 1
