@@ -45,7 +45,7 @@ bundle_code_server() {
   jq --slurp '.[0] * .[1]' package.json <(
     cat <<EOF
   {
-    "commit": "$(git rev-parse HEAD)",
+    "commit": "c56304cf4f7db35a76fe5aad7a1b2141717cfecb",
     "scripts": {
       "postinstall": "./postinstall.sh"
     }
@@ -85,7 +85,7 @@ bundle_vscode() {
   jq --slurp '.[0] * .[1]' "$VSCODE_SRC_PATH/product.json" <(
     cat <<EOF
   {
-    "commit": "$(git rev-parse HEAD)",
+    "commit": "c56304cf4f7db35a76fe5aad7a1b2141717cfecb",
     "date": $(jq -n 'now | todate')
   }
 EOF
