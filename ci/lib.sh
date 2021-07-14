@@ -40,6 +40,9 @@ arch() {
     aarch64)
       echo arm64
       ;;
+    armv7l)
+      echo armhf
+      ;;
     x86_64 | amd64)
       echo amd64
       ;;
