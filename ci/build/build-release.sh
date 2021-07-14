@@ -46,7 +46,7 @@ bundle_code_server() {
   jq --slurp '.[0] * .[1]' package.json <(
     cat << EOF
   {
-    "commit": "$(git rev-parse HEAD)",
+    "commit": "c04198697698dc72b5981fd1b70d6ecbd9b22caa",
     "scripts": {
       "postinstall": "./postinstall.sh"
     }
@@ -88,7 +88,7 @@ bundle_vscode() {
     cat << EOF
   {
     "enableTelemetry": true,
-    "commit": "$(git rev-parse HEAD)",
+    "commit": "c04198697698dc72b5981fd1b70d6ecbd9b22caa",
     "date": $(jq -n 'now | todate')
   }
 EOF
